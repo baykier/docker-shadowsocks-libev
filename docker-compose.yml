@@ -1,5 +1,5 @@
 server:
-  image: lostsnow/shadowsocks-libev
+  image: lostsnow/shadowsocks-libev:2.6.1
   ports:
     - "8088:8088/tcp"
     - "8088:8088/udp"
@@ -9,7 +9,7 @@ server:
   restart: always
 
 client:
-  image: lostsnow/shadowsocks-libev
+  image: lostsnow/shadowsocks-libev:2.6.1
   ports:
     - "1080:1080"
   environment:
